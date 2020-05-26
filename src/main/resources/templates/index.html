@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Inicio</title>
+</head>
+<body>
+    <h1>Bienvenidos! </h1>
+    <form method="post" th:action="@{/ingresarCategoria}">
+        <input type="submit" value="ingresar categoria">
+    </form><br>
+    <form method="post" th:action="@{/ingresarLibro}">
+        <input type="submit" value="ingresar libro">
+    </form><br>
+    <form method="post" th:action="@{/libros}">
+        <input type="submit" value="ver libros">
+    </form><br>
+
+    <p><span th:text="${strlibro}"></span></p>
+    <p><span th:text="${strCategoria}"></span></p>
+</body>
+</html>
